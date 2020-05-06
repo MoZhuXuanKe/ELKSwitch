@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'ELKSwitch_Example' do
+  pod 'ELKSwitch', :path => '../'
+
+  target 'ELKSwitch_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
