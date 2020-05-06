@@ -1,0 +1,70 @@
+//
+//  ELKSwitchHeader.pch
+//  ELKSwitch
+//
+//  Created by wx on 2020/5/6.
+//  Copyright © 2020 MoZhuXuanKe. All rights reserved.
+//
+
+#ifndef ELKSwitchHeader_pch
+#define ELKSwitchHeader_pch
+
+#pragma mark - 屏幕尺寸相关
+
+#define ELKScreenHeight       ([[UIScreen mainScreen] bounds].size.height)
+#define ELKScreenWidth        ([[UIScreen mainScreen] bounds].size.width)
+
+#define ELK_StatusBarHeight   ([UIApplication sharedApplication].statusBarFrame.size.height)
+
+#define ELK_isiPhoneX         ((ELK_StatusBarHeight > 21.f) ? YES : NO)
+#define ELK_NavBarHeight      (ELK_isiPhoneX ? 88.f : 64.f)
+#define ELK_SafeTop           (ELK_isiPhoneX ? 44.f : 0.f)
+#define ELK_TabBarHeight      (ELK_isiPhoneX ? 83.f : 49.f)
+#define ELK_SafeBottom        (ELK_isiPhoneX ? 34.f : 0.f)
+
+
+
+#define ELKScreenMaxLength    MAX(ELKScreenWidth, ELKScreenHeight)
+#define ELKScreenMinLength    MIN(ELKScreenWidth, ELKScreenHeight)
+#define ELKScreenScale        [UIScreen mainScreen].scale
+#define ELKWRatio             (ELKScreenWidth / 375.f)
+//UI像素对齐校正
+#define ELKUIAdjust(x)        (ceilf(x * ELKScreenScale) / ELKScreenScale)
+
+#pragma mark - 颜色宏
+#ifndef ELK_HexColor
+#define ELK_HexColor(colorH,a) [UIColor colorWithRed:((float)((colorH & 0xff0000) >> 16)) / 255.0 green:((float)((colorH & 0x00ff00) >> 8)) / 255.0 blue:((float)(colorH & 0x0000ff)) / 255.0 alpha:a]
+#endif
+
+#define ELK_HexColorString(colorString) [UIColor colorWithHexString:colorString]
+
+
+#pragma mark - 避免循环引用
+// 避免循环引用
+#ifndef e_weakify
+    #define e_weakify(var) __weak typeof(var) ELKWeak_##var = var;
+#endif
+
+#ifndef e_strongify
+#define e_strongify(var) \
+    _Pragma("clang diagnostic push") \
+    _Pragma("clang diagnostic ignored \"-Wshadow\"") \
+    __strong typeof(var) var = ELKWeak_##var; \
+    _Pragma("clang diagnostic pop")
+#endif
+
+
+// 数据容错
+#define chkNumber(oNbr)      ([oNbr isKindOfClass:[NSNumber class]])
+#define chkString(oStr)      ([oStr isKindOfClass:[NSString class]])
+#define stdNumber(oNbr)      (chkNumber(oNbr) ? oNbr : @0)
+#define stdString(oStr)      (chkString(oStr) ? oStr : @"")
+
+#define inteValNumber(oNbr)  ([stdNumber(oNbr) integerValue])
+
+
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#endif
+
+#endif /* ELKSwitchHeader_pch */

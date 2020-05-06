@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		25285DFB73ABCB59C049B5D0 /* Pods-ELKSwitch_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKSwitch_Tests.release.xcconfig"; path = "Target Support Files/Pods-ELKSwitch_Tests/Pods-ELKSwitch_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		412B2C2CF05FEA1EE3E175A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		412B2C2CF05FEA1EE3E175A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ELKSwitch_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELKSwitch_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,14 +59,15 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8008F3B10F4DD3C7462AA9B4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8008F3B10F4DD3C7462AA9B4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		999A2D2F27E7A6B52E3E9E7E /* Pods-ELKSwitch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKSwitch_Example.release.xcconfig"; path = "Target Support Files/Pods-ELKSwitch_Example/Pods-ELKSwitch_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A3C1073DF78C9C7DB157829D /* Pods-ELKSwitch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKSwitch_Example.debug.xcconfig"; path = "Target Support Files/Pods-ELKSwitch_Example/Pods-ELKSwitch_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B23D39118A458BB52B7344D6 /* ELKSwitch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ELKSwitch.podspec; path = ../ELKSwitch.podspec; sourceTree = "<group>"; };
+		B23D39118A458BB52B7344D6 /* ELKSwitch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ELKSwitch.podspec; path = ../ELKSwitch.podspec; sourceTree = "<group>"; };
 		C43D8FC5D166C1DD86D29579 /* Pods_ELKSwitch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELKSwitch_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0068067C5372FCBADF9637 /* Pods-ELKSwitch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKSwitch_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ELKSwitch_Tests/Pods-ELKSwitch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA6A73A36801E6B9D559C991 /* Pods_ELKSwitch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELKSwitch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44222A024624AC800C3E71B /* ELKSwitchHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELKSwitchHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +135,7 @@
 			children = (
 				6003F59C195388D20070C39A /* ELKAppDelegate.h */,
 				6003F59D195388D20070C39A /* ELKAppDelegate.m */,
+				F44222A024624AC800C3E71B /* ELKSwitchHeader.pch */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ELKViewController.h */,
 				6003F5A6195388D20070C39A /* ELKViewController.m */,
@@ -193,7 +195,6 @@
 				CD0068067C5372FCBADF9637 /* Pods-ELKSwitch_Tests.debug.xcconfig */,
 				25285DFB73ABCB59C049B5D0 /* Pods-ELKSwitch_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,7 +249,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = MoZhuXuanKe;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = RXW7U2T665;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = RXW7U2T665;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -258,6 +263,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,8 +500,9 @@
 			baseConfigurationReference = A3C1073DF78C9C7DB157829D /* Pods-ELKSwitch_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RXW7U2T665;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ELKSwitch/ELKSwitch-Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ELKSwitch/ELKSwitchHeader.pch";
 				INFOPLIST_FILE = "ELKSwitch/ELKSwitch-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
@@ -510,8 +517,9 @@
 			baseConfigurationReference = 999A2D2F27E7A6B52E3E9E7E /* Pods-ELKSwitch_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RXW7U2T665;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ELKSwitch/ELKSwitch-Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ELKSwitch/ELKSwitchHeader.pch";
 				INFOPLIST_FILE = "ELKSwitch/ELKSwitch-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
@@ -526,13 +534,14 @@
 			baseConfigurationReference = CD0068067C5372FCBADF9637 /* Pods-ELKSwitch_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RXW7U2T665;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ELKSwitch/ELKSwitchHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -551,13 +560,14 @@
 			baseConfigurationReference = 25285DFB73ABCB59C049B5D0 /* Pods-ELKSwitch_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RXW7U2T665;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ELKSwitch/ELKSwitchHeader.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
