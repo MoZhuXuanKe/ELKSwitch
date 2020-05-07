@@ -9,7 +9,6 @@
 #import "ELKViewController.h"
 #import <ELKSwitch/ELKSwitch.h>
 
-
 @interface ELKViewController ()
 @property (nonatomic, strong) ELKSwitch *elk_switch;
 @end
@@ -44,7 +43,7 @@
             }
            
         }];
-//        [_elk_switch setElkSwitchBackgroundColor_On:UIColor.grayColor];
+        [_elk_switch setElkSwitchBackgroundColor_On:UIColor.grayColor];
         _elk_switch;
     });
 }

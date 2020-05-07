@@ -80,13 +80,13 @@ typedef void (^MyBlock) (BOOL OnStatus);
 //设置背景图片
 -(void)setElkSwitchBackgroundColor_Off:(UIColor *)color;
 
-//设置左滑块图片
+//设置左滑块颜色
 -(void)setLeftBlockColor:(UIColor *)color;
 
-//设置右滑块图片
+//设置右滑块颜色
 -(void)setRightBlockColor:(UIColor *)color;
 
-//设置中间横线View
+//设置中间横线View颜色
 -(void)setMiddleLineColor:(UIColor *)color;
 
 @end

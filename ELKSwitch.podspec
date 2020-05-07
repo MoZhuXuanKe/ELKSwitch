@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ELKSwitch'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ELKSwitch.'
+  s.summary          = 'A simple control that can be used to replace UIswitch'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'A simple control that can be used to replace UIswitch,You can customize the frame and the color when it is not selected, and you can also set the tintColor'
 
   s.homepage         = 'https://github.com/MoZhuXuanKe/ELKSwitch'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
